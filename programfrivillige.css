@@ -1,0 +1,207 @@
+/* Mobil-first styling */
+
+/* Header styling */
+.custom-navbar {
+    background-color: #97CDFF !important; /* Ensartet lyseblå farve */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Let skygge for bedre visuelt udtryk */
+    border-bottom: none; /* Fjern Bootstrap's standard grå kant */
+    z-index: 1000; /* Sørg for, at headeren ligger over alt andet */
+    position: fixed;
+    width: 100%;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%280, 0, 0, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+.navbar-brand img {
+    height: 40px;
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important; /* Hvid tekstfarve */
+    font-weight: bold;
+    text-transform: uppercase; /* Gør teksten til store bogstaver */
+    transition: color 0.3s ease; /* Glidende farveskift ved hover */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ddd !important; /* Lysere farve ved hover */
+}
+
+/* Main styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    padding-top: 70px; /* Skaber plads under headeren */
+}
+
+main {
+    padding: 20px;
+}
+
+/* Programoversigt-sektion */
+.overview-section {
+    text-align: center;
+    margin: 20px 20px;
+}
+
+.overview-section h1 {
+    background-color: #FFC107;
+    font-size: 1.5rem; /* Mindre overskrift for mobil */
+    margin-bottom: 15px;
+    padding: 3%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+/* Søgefelt styling */
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 10px; /* Afstand mellem stjernen og søgefeltet */
+}
+
+.search-icon-left {
+    font-size: 20px;
+    color: #FFC107; /* Guld-farve til stjernen */
+    border: solid black 1px;
+    border-radius: 50%;
+    padding: 0.5%;
+}
+
+.search-wrapper {
+    position: relative;
+    width: 90%;
+    max-width: 500px; /* Begrænset bredde til større skærme */
+}
+
+.search-bar {
+    width: 100%;
+    padding: 10px 40px; /* Gør plads til højreikon */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box; /* Sikrer, at padding ikke overskrider feltets bredde */
+}
+
+.search-icon-right {
+    position: absolute;
+    right: 10px; /* Placeret inde i søgefeltet til højre */
+    top: 50%; /* Centrerer vertikalt */
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #000000; /* Blå farve til søgeikonet */
+}
+
+/* Cards styling */
+.cards-container {
+    display: grid;
+    grid-template-columns: 1fr; /* 1 kolonne på mobil */
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.card h2 {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 0.8rem;
+    color: #555;
+    margin: 10px 0;
+}
+
+.learn-more {
+    background-color: #0077B6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.learn-more:hover {
+    background-color: #005fa3;
+}
+
+/* Footer styling */
+.footer-top {
+    background-color: #97CDFF;
+    padding: 10px;
+    display: flex;
+    flex-direction: column; /* Vertikal layout på mobil */
+    align-items: center; /* Centrerer indhold */
+    gap: 10px;
+    text-align: center;
+}
+
+.footer-left,
+.footer-middle,
+.footer-right {
+    width: 100%; /* Fylder hele bredden */
+}
+
+.footer-middle p,
+.footer-left p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+.footer-right a i {
+    font-size: 20px; /* Mindre ikoner på mobil */
+    color: black;
+}
+
+.footer-bottom img {
+    width: 100%; /* Fuld bredde */
+    height: auto;
+}
+
+/* Media queries til større skærme */
+@media (min-width: 768px) {
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 kolonner på større skærme */
+    }
+
+    .overview-section h1 {
+        font-size: 2rem;
+    }
+
+    .footer-top {
+        flex-direction: row; /* Vandret layout til footer-sektioner */
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .footer-left,
+    .footer-middle,
+    .footer-right {
+        width: auto; /* Tilpas bredden til indhold */
+    }
+
+    .footer-right {
+        text-align: right;
+    }
+}
+

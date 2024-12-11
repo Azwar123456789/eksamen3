@@ -1,0 +1,114 @@
+/* Grundlæggende styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+header {
+    margin-top: 20px;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    color: #333;
+    display: inline-block;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+}
+
+main {
+    padding: 20px;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+
+}
+
+.input-group input {
+    flex: 1;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.radio-group {
+    background-color: #0077B6; /* Blå baggrundsfarve */
+    color: white; /* Hvid tekst for kontrast */
+    padding: 40px; /* Giver lidt luft omkring teksten */
+    border-radius: 0px; /* Afrundede hjørner */
+    margin: 20px 0; /* Plads mellem sektionerne */
+}
+
+.radio-group legend {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.radio-options {
+    display: flex;
+    justify-content: center; /* Centrerer indholdet horisontalt */
+    gap: 20px; /* Plads mellem Ja og Nej */
+    margin-top: 10px; /* Plads mellem spørgsmålet og valgmulighederne */
+}
+
+.radio-options label {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    accent-color: white;
+    cursor: pointer;
+}
+
+.btn-submit {
+    background-color: #FFC107;
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: none;
+    padding: 15px;
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: -30px; /* Flytter knappen op, så den overlapper boksen */
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    z-index: 1; /* Sørger for, at knappen vises over boksen */
+}
+
+.btn-submit:hover {
+    background-color: #e0a800;
+}
+
+
+@media (max-width: 768px) {
+    .input-group {
+        flex-direction: column;
+    }
+}
+

@@ -1,0 +1,87 @@
+/* Grundlæggende styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.login-container {
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    padding: 20px 30px;
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Inputgruppe styling */
+.input-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+input:focus {
+    outline: none;
+    border-color: #0077B6;
+    box-shadow: 0 0 4px rgba(0, 119, 182, 0.5);
+}
+
+.login-button {
+    display: inline-block; /* Sørger for, at linket opfører sig som en knap */
+    background-color: #0077B6; /* Blå baggrund */
+    color: white; /* Hvid tekst */
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none; /* Fjerner understregning */
+    border: none; /* Ingen kant */
+    border-radius: 5px; /* Runde hjørner */
+    padding: 10px 20px; /* Indre afstand */
+    cursor: pointer; /* Musens markør bliver en hånd */
+    transition: background-color 0.3s ease; /* Tilføjer en hover-effekt */
+}
+
+.login-button:hover {
+    background-color: #005fa3; /* Mørkere blå ved hover */
+}
+
+
+.logo {
+    margin-top: 20px;
+    max-width: 100px;
+    height: auto;
+}

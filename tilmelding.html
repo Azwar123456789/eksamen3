@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tilmelding</title>
+    <link rel="stylesheet" href="tilmeldingsheet.css">
+</head>
+<body>
+<header>
+    <h1>TILMELD DIG</h1>
+</header>
+<main>
+    <form>
+        <div class="input-group">
+            <input type="text" placeholder="Navn" required>
+        </div>
+        <div class="input-group">
+            <input type="text" placeholder="Skole" required>
+        </div>
+        <div class="input-group">
+            <input type="tel" placeholder="Telefon nummer" required>
+        </div>
+        <div class="input-group">
+            <input type="email" placeholder="Email" required>
+        </div>
+        <div class="radio-group">
+            <legend>Vil du deltage i et foredrag?</legend>
+            <div class="radio-options">
+                <label>
+                    <input type="radio" name="foredrag" value="ja" required> Ja
+                </label>
+                <label>
+                    <input type="radio" name="foredrag" value="nej"> Nej
+                </label>
+            </div>
+        </div>
+        <div class="radio-group">
+            <legend>Ønsker du frokost?</legend>
+            <div class="radio-options">
+                <label>
+                    <input type="radio" name="frokost" value="ja" required> Ja
+                </label>
+                <label>
+                    <input type="radio" name="frokost" value="nej"> Nej
+                </label>
+            </div>
+        </div>
+        <a href="login.html" class="btn-submit">TILMELD</a>
+
+    </form>
+</main>
+</body>
+</html>
